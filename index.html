@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Design Using HTML</title>
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Form Design Using HTML</h1>
+        <div class="form-group">
+          <label for="your-name">Your Name</label>
+          <input
+            type="text"
+            name="yourName"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <!-- /.form-group -->
+
+        <div class="form-group">
+          <label for="your-roll">Your Roll</label>
+          <input type="number" name="yourRoll" id="roll" />
+        </div>
+        <!-- /.form-group -->
+
+        <p>Please select your Gender:</p>
+        <input type="radio" id="gender" name="gender" value="Male" />  
+        <label for="male">Male</label><br />
+        <input type="radio" id="css" name="gender" value="Female" />  
+        <label for="female">Female</label>
+
+        <p>Please select your favorite language:</p>
+        <input
+          type="checkbox"
+          id="language"
+          name="language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label><br />
+        <input type="checkbox" id="language" name="language" value="Python" />
+        <label for="python">Python</label><br />
+        <input type="checkbox" id="language" name="language" value="Java" />
+        <label for="java">Java</label>
+
+        <button type="submit" class="btn" id="button">Submit</button>
+      </div>
+      <!-- /.form-wrap -->
+      <div>
+        <table id="display" class="container form-wrap">
+          <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Gender</th>
+            <th>Languages</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- END of container -->
+    <!-- Include JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
